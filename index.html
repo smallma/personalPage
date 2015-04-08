@@ -10,6 +10,12 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
   </head>
 
   <body>
@@ -22,14 +28,61 @@
       </div>
     </div>
 
+    <nav id="cd-vertical-nav">
+      <ul>
+        <li>
+          <a href="#section1" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">QOCA Messenger</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section2" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">QAF Parse</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section3" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Memcached Management</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
+
     <div class="content">
-      <div class="project">
-        <img src="http://livedemo00.template-help.com/wordpress_36392/wp-content/themes/theme1382/images/author-photo.png"/>
-        <div class="projectIntro">
-          <div class="title">Messenger</div>
-          <div class="info">QOCA Messenger</div> 
+      <section id="section1" class="cd-section">
+        <div class="project">
+          <img src="http://livedemo00.template-help.com/wordpress_36392/wp-content/themes/theme1382/images/author-photo.png"/>
+          <div class="projectIntro">
+            <div class="title">Messenger</div>
+            <div class="info">QOCA Messenger</div> 
+          </div>
         </div>
-      </div>
+      </section>
+       
+      <section id="section2" class="cd-section">
+          <div class="project">
+          <img src="http://livedemo00.template-help.com/wordpress_36392/wp-content/themes/theme1382/images/author-photo.png"/>
+          <div class="projectIntro">
+            <div class="title">QAF Parse</div>
+            <div class="info">QAF Parse</div> 
+          </div>
+        </div>
+      </section>
+
+      <section id="section3" class="cd-section">
+        <div class="project">
+          <img src="http://livedemo00.template-help.com/wordpress_36392/wp-content/themes/theme1382/images/author-photo.png"/>
+          <div class="projectIntro">
+            <div class="title">Memcached Management</div>
+            <div class="info">Memcached Management</div> 
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="mastfoot"><p>Rain Personal Page @2015</p></div>
