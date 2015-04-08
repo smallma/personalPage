@@ -182,6 +182,7 @@ Main components
   width: 12px;
   border-radius: 50%;
   background-color: #d88683;
+  /*background-color: #FFE4B5;*/
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
@@ -195,7 +196,7 @@ Main components
   position: relative;
   margin-right: 10px;
   padding: .4em .5em;
-  color: black;
+  color: #626262;
   /*text-shadow: 0 0 5px white;*/
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   font-size: 14px;
