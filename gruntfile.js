@@ -17,7 +17,10 @@ module.exports = function(grunt) {
           src: ['*.sass'],
           dest: 'css',
           ext: '.css'
-        }]
+        }],
+        options: {
+          sourcemap: 'none'
+        }
       }
     },
     watch: {
