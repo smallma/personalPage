@@ -23,7 +23,10 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: 'sass/*.sass',
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          livereload: true,
+        }
       },
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'sass']

@@ -33,11 +33,10 @@ ol, ul {
   color: #fff;
   font-size: 97px;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
-
-h2 i.out {
-  visibility: hidden; }
-h2 i.in {
-  visibility: visible; }
+  .intro h2 i.out {
+    visibility: hidden; }
+  .intro h2 i.in {
+    visibility: visible; }
 
 .content {
   margin-bottom: 40px;
