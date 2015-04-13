@@ -22,10 +22,31 @@ ol, ul
   position: relative
   background: url('../image/header-tail.png') 0 0 repeat-x
 
+#linkBar
+  position: absolute
+  right: 10px
+  width: 190px
+  top: 5px
+  ul
+    margin-top: 10px
+    li
+      width: 32px
+      height: 32px
+      float: left
+      margin: 0 5px
+      overflow: hidden
+      img
+        position: relative
+    li:hover
+      img
+        top: -32px
+
 .profile
   padding: 0 74px 75px 57px
   .avatar
     float: left
+    width: 200px
+    height: 200px
     margin: 0 20px
     border-radius: 15px
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .5)

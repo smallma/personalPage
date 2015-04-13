@@ -12,6 +12,22 @@ jQuery(document).ready(function($){
         event.preventDefault();
         smoothScroll($(this.hash));
     });
+
+    $('#facebookBtn').on('click', function () {
+    	console.log('facebook Btn click');
+    	window.open("https://www.facebook.com/smallma009");
+    });
+
+    $('#flickrBtn').on('click', function () {
+    	console.log('flickr Btn click');
+    	window.open("https://www.flickr.com/photos/raindslr/");
+    });
+
+    $('#twitterBtn').on('click', function () {
+    	console.log('twitter Btn click');
+    	window.open("https://twitter.com/Rain_Lin");
+    });
+
     // //smooth scroll to second section
     // $('.cd-scroll-down').on('click', function(event){
     //     event.preventDefault();
@@ -33,7 +49,7 @@ jQuery(document).ready(function($){
 			element.className = 'in';
 		}, delaySec);
 	}
-	
+
 	setTimeout(function () {
 		var elements = $('#welcome').find('i');
 		var delayInterval = 150;
