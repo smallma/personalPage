@@ -39,13 +39,20 @@ ol, ul {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
-.intro h2{
+.intro h2 i{
   font-family: ArchitectsDaughter;
   color: #fff;
   font-size: 97px;
   text-shadow: 0 0 1px rgba(0, 0, 0, .3);
 }
 
+h2 i.out {
+  visibility: hidden;
+}
+
+h2 i.in {
+  visibility: visible;
+}
 
 .content {
   margin-bottom: 40px;

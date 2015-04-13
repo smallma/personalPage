@@ -17,7 +17,7 @@
     <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <script src="js/sweet-alert.min.js"></script> <!-- sweet-alert -->
-
+    <script src="js/underscore-min.js"></script> <!-- sweet-alert -->
   </head>
 
   <body>
@@ -26,7 +26,14 @@
     <div class="profile">
       <img class="avatar" src="http://livedemo00.template-help.com/wordpress_36392/wp-content/themes/theme1382/images/author-photo.png"/>
       <div class="intro">
-        <h2>Hello!</h2>My name is Rain Lin. I live in Taiwan Taipei, also I like to take picture and make model. 
+        <h2 id="welcome">
+          <i class="out">H</i>
+          <i class="out">e</i>
+          <i class="out">l</i>
+          <i class="out">l</i>
+          <i class="out">o</i>
+          <i class="out">!</i>
+        </h2>My name is Rain Lin, and I'm 31 years old .I live Taipei, Taiwan. Also take picture and make model are my favorites.
       </div>
     </div>
 
@@ -35,19 +42,19 @@
         <li>
           <a href="#section1" data-number="1">
             <span class="cd-dot"></span>
-            <span class="cd-label">Projects</span>
+            <span class="cd-label">Project</span>
           </a>
         </li>
         <li>
           <a href="#section2" data-number="2">
             <span class="cd-dot"></span>
-            <span class="cd-label">Habits</span>
+            <span class="cd-label">Favorite</span>
           </a>
         </li>
         <li>
           <a href="#section3" data-number="3">
             <span class="cd-dot"></span>
-            <span class="cd-label">Contact Me</span>
+            <span class="cd-label">Contact</span>
           </a>
         </li>
       </ul>
@@ -58,10 +65,27 @@
     <div class="content">
       <section id="section1" class="cd-section">
         <div class="project">
+          <img src="image/tilera_logo.png"/>
+          <div class="projectIntro">
+            <div class="title">Tilera S2Q Performance</div>
+            <div class="info">
+              <p>2011年底時，針對Tilera S2Q進行效能調校，調整可用CPU數量，記憶體大小配置等參數</p>
+              <p>使用軟體測試TPS與OPS，並調整ROM各項參數，已達到最佳效能</p>
+            </div>
+            <button type='button' class="btn btn-success" id="tileraBtn">Details</button>
+          </div>
+        </div>
+
+        <div class="project">
           <img src="image/php_logo.jpeg"/>
           <div class="projectIntro">
             <div class="title">Memcached Management</div>
-            <div class="info">Memcached Web Management</div> 
+            <div class="info">
+              <p>2012年，使用PHP開發在S2Q上的Memcached監控與管理API</p>
+              <p>提供GWT產生的WEB介面來監控Memcached目前使用的記憶體與網路即時流量</p>
+              <p>除此外更提供memcached failover機制，</p>
+            </div>
+            <button type='button' class="btn btn-success" id="memcachedBtn">Details</button>
           </div>
         </div>
 
@@ -69,15 +93,24 @@
           <img src="image/openstack_logo.jpeg"/>
           <div class="projectIntro">
             <div class="title">OpenStack Glance management</div>
-            <div class="info">Glance management</div> 
+            <div class="info">
+              <p>2013年，負責管理與維護Openstack Glance項目，當重啟VM時，能自動啟動Glance服務</p>
+              <p>Glance是一個中介軟體，提供了image上傳與下載的服務，能使用Openstack swift做為後端儲存位置</p>
+              <p>透過Glance還提供了搜尋的功能，使用DB來儲存image metadata</p>  
+            </div>
+            <button type='button' class="btn btn-success" id="openstackBtn">Details</button>
           </div>
         </div>
 
         <div class="project">
           <img src="image/python_logo.jpeg"/>
           <div class="projectIntro">
-            <div class="title">Server auto deployment</div>
-            <div class="info">Glance management</div> 
+            <div class="title">Storage auto deployment</div>
+            <div class="info">
+              <p>2014年，負責針對server底層storage進行自動化配置</p>
+              <p>透過Python搜尋目標Hard Disk，並進行格式化，建置ZFS與LVM等空間配置</p>
+            </div>
+            <button type='button' class="btn btn-success" id="pythonBtn">Details</button>
           </div>
         </div>
 
@@ -97,7 +130,7 @@
         <div class="project">
           <img src="image/parse_logo.jpeg"/>
           <div class="projectIntro">
-            <div class="title">QAF Parse</div>
+            <div class="title">Parse Restful API</div>
             <div class="info">
               <p>2015年初開始研究Parse.com，提供Restful API給各種開發平台使用</p>
               <p>並針對Parse特性修改舊有資料庫架構，提升效能與減少Request數目</p>

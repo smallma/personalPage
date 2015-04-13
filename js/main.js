@@ -28,13 +28,28 @@ jQuery(document).ready(function($){
     // 	$('.touch #cd-vertical-nav').removeClass('open');
     // });
 
+	function delayToShowWording(element, delaySec) {
+		setTimeout(function () {
+			element.className = 'in';
+		}, delaySec);
+	}
+	
+	setTimeout(function () {
+		var elements = $('#welcome').find('i');
+		var delayInterval = 150;
+		var elementCount = 0;
+		_.each(elements, function(element)  {
+			var delaySec = delayInterval * elementCount;
+			elementCount = elementCount + 1;
+			delayToShowWording(element, delaySec);
+		})
+	}, 1000);
 
 	$('#cameraBtn').on('click', function(event) {
 		console.log('cameraBtn click');
 		swal({
-			title: "My Camera!",
+			title: "My Albume",
 			text: "<iframe width='526' height='352' frameborder='0' src='http://files.slidemypics.com/app/js/iframe.html?bg_color=1f1f1f&amp;hash=9c9ded2857eb64b4bf4d1da1a1547397&amp;r=0.9035518339369446'></iframe>",
-			// confirmButtonText: ""
 			html: true
 		});
 	});
