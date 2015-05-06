@@ -1,5 +1,5 @@
 body {
-  background: url(../image/bg.gif) 50% 0 #252525; }
+  background: url(../image/bg.gif) 50% 0 #252525 !important; }
 
 @font-face {
   font-family: ArchitectsDaughter;
@@ -12,9 +12,14 @@ div {
 ol, ul {
   list-style: none; }
 
+#linkBar ul li {
+  cursor: pointer; }
+
 .flipContainer {
   transform-style: preserve-3d;
-  perspective: 1000; }
+  perspective: 1000;
+  position: absolute;
+  top: 50%; }
   .flipContainer .flip {
     transition: 0.6s;
     transfrom-style: preserve-3d;
@@ -85,7 +90,7 @@ ol, ul {
   margin-bottom: 40px;
   padding: 6px 74px 0 74px; }
 
-.project {
+.project, .contactMe {
   margin-top: 40px;
   margin-bottom: 40px;
   border: 1px solid #fff;
@@ -94,18 +99,7 @@ ol, ul {
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   background: #fff;
   position: relative; }
-  .project img {
-    position: absolute;
-    width: 145px;
-    padding: 14px;
-    margin-top: 8px;
-    top: 14px;
-    left: 30px; }
-  .project .projectIntro {
-    margin-left: 207px;
-    margin-right: 20px;
-    padding-bottom: 40px; }
-  .project .title {
+  .project .title, .contactMe .title {
     padding-top: 18px;
     color: #171717;
     font-size: 28px;
@@ -114,16 +108,42 @@ ol, ul {
     text-overflow: ellipsis;
     overflow: hidden;
     background: url(../image/hr.png) 0 87% repeat-x; }
-  .project .info {
+  .project .info, .contactMe .info {
     margin-top: 16px;
     color: #626262;
     font-size: 11px;
     font-family: Verdana; }
-  .project .btn {
-    position: absolute;
-    right: 30px;
-    font-family: Verdana;
-    z-index: 1; }
+
+.contactMe {
+  padding: 5px 35px;
+  min-height: 150px; }
+  .contactMe .icon {
+    position: absolute; }
+  .contactMe .row {
+    margin: 10px 10px 10px 55px; }
+    .contactMe .row a {
+      color: #626262;
+      font-size: 14px; }
+    .contactMe .row .hint {
+      font-size: 11px;
+      color: lightgray; }
+
+.project img {
+  position: absolute;
+  width: 145px;
+  padding: 14px;
+  left: 30px;
+  top: 50%;
+  margin-top: -72px; }
+.project .projectIntro {
+  margin-left: 207px;
+  margin-right: 20px;
+  padding-bottom: 40px; }
+.project .btn {
+  position: absolute;
+  right: 30px;
+  font-family: Verdana;
+  z-index: 1; }
 
 .mastfoot {
   text-align: center;
