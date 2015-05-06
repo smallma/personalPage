@@ -28,6 +28,13 @@ jQuery(document).ready(function($){
     	window.open("https://twitter.com/Rain_Lin");
     });
 
+    // $('#githubBtn').on('click', function () {
+    // 	console.log('gitbut Btn click');
+    // 	window.open("https://github.com/smallma");
+    // });
+
+    
+
     // //smooth scroll to second section
     // $('.cd-scroll-down').on('click', function(event){
     //     event.preventDefault();
