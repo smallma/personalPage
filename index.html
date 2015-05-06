@@ -83,19 +83,29 @@
     <div class="content">
       <section id="section1" class="cd-section">
         <div class="project">
-          <img src="image/tilera_logo.png"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/tilera_logo.jpeg"/>
+              <img class="back" src="image/linux_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">Tilera S2Q Performance</div>
             <div class="info">
               <p>2011年底時，針對Tilera S2Q進行效能調校，調整可用CPU數量，記憶體大小配置等參數</p>
               <p>使用軟體測試TPS與OPS，並調整ROM各項參數，已達到最佳效能</p>
             </div>
-            <button type='button' class="btn btn-success" id="tileraBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="tileraBtn">Details</button> -->
           </div>
         </div>
 
         <div class="project">
-          <img src="image/php_logo.jpeg"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/memcached_logo.jpeg"/>
+              <img class="back" src="image/php_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">Memcached Management</div>
             <div class="info">
@@ -103,12 +113,17 @@
               <p>提供GWT產生的WEB介面來監控Memcached目前使用的記憶體與網路即時流量</p>
               <p>除此外更提供memcached failover機制，</p>
             </div>
-            <button type='button' class="btn btn-success" id="memcachedBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="memcachedBtn">Details</button> -->
           </div>
         </div>
 
         <div class="project">
-          <img src="image/openstack_logo.jpeg"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/openstack_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">OpenStack Glance management</div>
             <div class="info">
@@ -116,24 +131,34 @@
               <p>Glance是一個中介軟體，提供了image上傳與下載的服務，能使用swift做為後端儲存位置</p>
               <p>透過Glance還提供了搜尋的功能，使用DB來儲存image metadata</p>  
             </div>
-            <button type='button' class="btn btn-success" id="openstackBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="openstackBtn">Details</button> -->
           </div>
         </div>
 
         <div class="project">
-          <img src="image/python_logo.jpeg"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/linux_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">Storage auto deployment</div>
             <div class="info">
               <p>2014年，負責針對server底層storage進行自動化配置</p>
               <p>透過Python搜尋目標Hard Disk，並進行格式化，建置ZFS與LVM等空間配置</p>
             </div>
-            <button type='button' class="btn btn-success" id="pythonBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="pythonBtn">Details</button> -->
           </div>
         </div>
 
         <div class="project">
-          <img src="image/sencha_touch_logo.jpeg"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/qoca_logo.jpeg"/>
+              <img class="back" src="image/sencha_touch_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">QOCA Messenger</div>
             <div class="info">
@@ -141,12 +166,17 @@
               <p>希望年長者能輕易使用聊天軟體，與時下年輕人更沒有隔閡</p>
               <p>Messenger提供了offline mode即使沒有網路也能瀏覽訊息</p>
             </div>
-            <button type='button' class="btn btn-success" id="messengerBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="messengerBtn">Details</button> -->
           </div>
         </div>
 
         <div class="project">
-          <img src="image/parse_logo.jpeg"/>
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/parse_logo.jpeg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>            
+            </div>
+          </div>
           <div class="projectIntro">
             <div class="title">Parse Restful API</div>
             <div class="info">
@@ -154,10 +184,27 @@
               <p>並針對Parse特性修改舊有資料庫架構，提升效能與減少Request數目</p>
               <p>目前正研究使用Parse會遭遇的極限與如何提升效能</p>
             </div>
-            <button type='button' class="btn btn-success" id="parseBtn">Details</button>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
           </div>
         </div>
 
+        <div class="project">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/lottery_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>            
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Taiwan lottery data scraping</div>
+            <div class="info">
+              <p>2015年中想實作樂透的ＡＰＰ，所以需要大量的樂透歷史資料</p>
+              <p>於是使用PYTHON對台灣彩券爬資料，並透過schedule定期更新</p>
+              <p>除此之外更透過linux upstart控制程式能自動啟動與回復</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
         
       </section>
        
@@ -184,7 +231,7 @@
               <p>尤其是機器獸 Zoids，是由Takara Tomy公司發售，最近壽屋也加入了發售行列，讓zoids進展到一個新高峰</p>
               <p>組模型讓我常常廢寢忘食，卻也直接提升專注力，每每看到那些神人作品心裡都覺得崇敬與羨慕</p>
             </div>
-            <button type='button' class="btn btn-warning" id="modelBtn">Details</button> 
+            <!-- <button type='button' class="btn btn-warning" id="modelBtn">Details</button>  -->
           </div>
         </div>
       </section>
