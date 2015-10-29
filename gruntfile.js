@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     jshint: {
@@ -24,28 +25,36 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      scripts: {
-        files: '**/*.html',
-        options: {
-          livereload: true,
-        }
-      },
       css: {
         files: 'sass/*.sass',
         tasks: ['sass'],
-        options: {
-          livereload: true,
-        }
       },
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'sass']
-    }
+      js: {
+        files: 'js/*.js',
+        tasks: ['jshint']
+      }
+    },
+    browserSync: {
+      default_options: {
+        bsFiles: {
+          src: [
+            '*.html',
+            'js/**/*.js',
+            'css/**/*.css'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: './',
+            index: 'index.html'
+          }
+        }
+      }
+    },
+
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-
-  grunt.registerTask('default', ['jshint', 'sass']);
+  grunt.registerTask('default', ['browserSync', 'watch', 'jshint', 'sass']);
 
 };

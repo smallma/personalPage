@@ -83,16 +83,16 @@
         </li>
       </ul>
     </nav>
-    
+
     <!-- <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
 
     <div class="content">
-      <section id="section1" class="cd-section">
-        <div class="project">
+      <section id="section1" class="cd-section row">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/tilera_logo.jpeg"/>
-              <img class="back" src="image/linux_logo.jpeg"/>            
+              <img class="back" src="image/linux_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
@@ -105,11 +105,11 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/memcached_logo.jpeg"/>
-              <img class="back" src="image/php_logo.jpeg"/>            
+              <img class="back" src="image/php_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
@@ -123,29 +123,29 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/openstack_logo.jpeg"/>
-              <img class="back" src="image/python_logo.jpeg"/>            
+              <img class="back" src="image/python_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
-            <div class="title">OpenStack Glance management</div>
+            <div class="title">Glance management</div>
             <div class="info">
               <p>2013年，負責管理與維護Openstack Glance項目，當重啟VM時，能自動啟動Glance服務</p>
               <p>Glance是一個中介軟體，提供了image上傳與下載的服務，能使用swift做為後端儲存位置</p>
-              <p>透過Glance還提供了搜尋的功能，使用DB來儲存image metadata</p>  
+              <p>透過Glance還提供了搜尋的功能，使用DB來儲存image metadata</p>
             </div>
             <!-- <button type='button' class="btn btn-success" id="openstackBtn">Details</button> -->
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/linux_logo.jpeg"/>
-              <img class="back" src="image/python_logo.jpeg"/>            
+              <img class="back" src="image/python_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
@@ -158,11 +158,11 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/qoca_logo.jpeg"/>
-              <img class="back" src="image/sencha_touch_logo.jpeg"/>            
+              <img class="back" src="image/sencha_touch_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
@@ -176,11 +176,11 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/parse_logo.jpeg"/>
-              <img class="back" src="image/javascript_logo.jpeg"/>            
+              <img class="back" src="image/javascript_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
@@ -194,15 +194,15 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <div class="flipContainer">
             <div class="flip">
               <img class="front" src="image/lottery_logo.jpeg"/>
-              <img class="back" src="image/python_logo.jpeg"/>            
+              <img class="back" src="image/python_logo.jpeg"/>
             </div>
           </div>
           <div class="projectIntro">
-            <div class="title">Taiwan lottery data scraping</div>
+            <div class="title">Lottery scraping</div>
             <div class="info">
               <p>2015年中想實作樂透的ＡＰＰ，所以需要大量的樂透歷史資料</p>
               <p>於是使用PYTHON對台灣彩券爬資料，並透過schedule定期更新</p>
@@ -211,11 +211,65 @@
             <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
           </div>
         </div>
-        
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/zoom_logo.jpeg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">ZenFone Zoom</div>
+            <div class="info">
+              <p>使用JQuery, HTML5, SASS實作Asus ZenFone Zoom產品頁面</p>
+              <p>透過Velocity與Waypoints處理網頁動畫與視差滾動功能</p>
+              <a href="http://www.asus.com/Phone/ZenFone-Zoom-ZX551ML/" target="_blank">ZenFone Zoom</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/HSR_logo.jpg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">HSR搶票</div>
+            <div class="info">
+              <p>使用Chrome Extension與Material UI實作高鐵搶票介面</p>
+              <p>透過此介面可以加速購票流程，只需要點及兩次enter即可以購票成功</p>
+              <a href="https://github.com/smallma/Quick-Buy-THSRC-ticket-Google-Extention" target="_blank">Github</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/mobile_logo.png"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Browser Testing Controller</div>
+            <div class="info">
+              <p>使用MUI實作Browser視窗大小控制功能</p>
+              <p>透過此介面可以一次開啟目前各種主流行動裝置大小之視窗</p>
+              <p>進而提升測試效率</p>
+              <a href="https://github.com/smallma/Testing-Browser-Controller" target="_blank">Github</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
       </section>
-       
-      <section id="section2" class="cd-section">
-        <div class="project">
+
+      <section id="section2" class="cd-section row">
+        <div class="project col-md-10 col-md-offset-1">
           <img src="image/dslr_logo.jpeg"/>
           <div class="projectIntro">
             <div class="title">Camera</div>
@@ -228,7 +282,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project col-md-10 col-md-offset-1">
           <img src="image/zoids_logo.jpeg"/>
           <div class="projectIntro">
             <div class="title">Model</div>
@@ -242,23 +296,23 @@
         </div>
       </section>
 
-      <section id="section3" class="cd-section">
-        <div class="contactMe">
+      <section id="section3" class="cd-section row">
+        <div class="contactMe col-md-10 col-md-offset-1">
           <div class="projectIntro">
             <div class="title">Contact Me</div>
             <div class="info">
               <div class="mail">
                 <div class="icon fa fa-envelope-o fa-2x"></div>
                 <div class="row">
-                  <a href="mailto:rain.lin@quantatw.com">rain.lin@quantatw.com</a>
-                  <div class="hint">Work</div>  
+                  <a href="mailto:rain.lin@quantatw.com">rain.lin@asus.com</a>
+                  <div class="hint">Work</div>
                 </div>
                 <div class="row">
                   <a href="mailto:s.rain@yahoo.com.tw">s.rain@yahoo.com.tw</a>
                   <div class="hint">Personal</div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </section>
