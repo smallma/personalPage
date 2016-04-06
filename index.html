@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>It's Rain</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sweet-alert.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="font/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/sweet-alert.min.js"></script> <!-- sweet-alert -->
+    <script src="js/underscore-min.js"></script> <!-- underscore-->
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="linkBar">
+        <ul>
+          <li id="facebookBtn">
+            <img src="image/facebook.png">
+          </li>
+        </ul>
+        <ul>
+          <li id="flickrBtn">
+            <img src="image/flickr.png">
+          </li>
+        </ul>
+        <ul>
+          <li id="twitterBtn">
+            <img src="image/twitter.png">
+          </li>
+        </ul>
+        <!-- <ul>
+          <li id="githubBtn">
+            <img src="image/github_icon.png">
+          </li>
+        </ul> -->
+      </div>
+    </header>
+
+    <div class="profile">
+      <img class="avatar" src="image/myAvatar.png"/>
+      <div class="intro">
+        <h2 id="welcome">
+          <i class="out">H</i>
+          <i class="out">e</i>
+          <i class="out">l</i>
+          <i class="out">l</i>
+          <i class="out">o</i>
+          <i class="out">!</i>
+        </h2>My name is Rain Lin. I live in Taipei, Taiwan. Also take picture and make model are my favorites.
+      </div>
+    </div>
+
+    <nav id="cd-vertical-nav">
+      <ul>
+        <li>
+          <a href="#section1" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Project</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section2" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Favorite</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section3" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
+
+    <div class="content">
+      <section id="section1" class="cd-section row">
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/tilera_logo.jpeg"/>
+              <img class="back" src="image/linux_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Tilera S2Q Performance</div>
+            <div class="info">
+              <p>2011年底時，針對Tilera S2Q進行效能調校，調整可用CPU數量，記憶體大小配置等參數</p>
+              <p>使用軟體測試TPS與OPS，並調整ROM各項參數，已達到最佳效能</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="tileraBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/memcached_logo.jpeg"/>
+              <img class="back" src="image/php_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Memcached Management</div>
+            <div class="info">
+              <p>2012年，使用PHP開發在S2Q上的Memcached監控與管理API</p>
+              <p>提供GWT產生的WEB介面來監控Memcached目前使用的記憶體與網路即時流量</p>
+              <p>除此外更提供memcached failover機制，</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="memcachedBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/openstack_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Glance management</div>
+            <div class="info">
+              <p>2013年，負責管理與維護Openstack Glance項目，當重啟VM時，能自動啟動Glance服務</p>
+              <p>Glance是一個中介軟體，提供了image上傳與下載的服務，能使用swift做為後端儲存位置</p>
+              <p>透過Glance還提供了搜尋的功能，使用DB來儲存image metadata</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="openstackBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/linux_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Storage auto deployment</div>
+            <div class="info">
+              <p>2014年，負責針對server底層storage進行自動化配置</p>
+              <p>透過Python搜尋目標Hard Disk，並進行格式化，建置ZFS與LVM等空間配置</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="pythonBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/qoca_logo.jpeg"/>
+              <img class="back" src="image/sencha_touch_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">QOCA Messenger</div>
+            <div class="info">
+              <p>2014年中開始使用Sencha Touch開發Web App，並針對年長者市場開發一款Private Messenger</p>
+              <p>希望年長者能輕易使用聊天軟體，與時下年輕人更沒有隔閡</p>
+              <p>Messenger提供了offline mode即使沒有網路也能瀏覽訊息</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="messengerBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/parse_logo.jpeg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Parse Restful API</div>
+            <div class="info">
+              <p>2015年初開始研究Parse.com，提供Restful API給各種開發平台使用</p>
+              <p>並針對Parse特性修改舊有資料庫架構，提升效能與減少Request數目</p>
+              <p>目前正研究使用Parse會遭遇的極限與如何提升效能</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/lottery_logo.jpeg"/>
+              <img class="back" src="image/python_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Lottery scraping</div>
+            <div class="info">
+              <p>2015年中想實作樂透的ＡＰＰ，所以需要大量的樂透歷史資料</p>
+              <p>於是使用PYTHON對台灣彩券爬資料，並透過schedule定期更新</p>
+              <p>除此之外更透過linux upstart控制程式能自動啟動與回復</p>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/zoom_logo.jpeg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">ZenFone Zoom</div>
+            <div class="info">
+              <p>使用JQuery, HTML5, SASS實作Asus ZenFone Zoom產品頁面</p>
+              <p>透過Velocity與Waypoints處理網頁動畫與視差滾動功能</p>
+              <a href="http://www.asus.com/Phone/ZenFone-Zoom-ZX551ML/" target="_blank">ZenFone Zoom</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/HSR_logo.jpg"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">HSR搶票</div>
+            <div class="info">
+              <p>使用Chrome Extension與Material UI實作高鐵搶票介面</p>
+              <p>透過此介面可以加速購票流程，只需要點及兩次enter即可以購票成功</p>
+              <a href="https://github.com/smallma/Quick-Buy-THSRC-ticket-Google-Extention" target="_blank">Github</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <div class="flipContainer">
+            <div class="flip">
+              <img class="front" src="image/mobile_logo.png"/>
+              <img class="back" src="image/javascript_logo.jpeg"/>
+            </div>
+          </div>
+          <div class="projectIntro">
+            <div class="title">Browser Testing Controller</div>
+            <div class="info">
+              <p>使用MUI實作Browser視窗大小控制功能</p>
+              <p>透過此介面可以一次開啟目前各種主流行動裝置大小之視窗</p>
+              <p>進而提升測試效率</p>
+              <a href="https://github.com/smallma/Testing-Browser-Controller" target="_blank">Github</a>
+            </div>
+            <!-- <button type='button' class="btn btn-success" id="parseBtn">Details</button> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="section2" class="cd-section row">
+        <div class="project col-md-10 col-md-offset-1">
+          <img src="image/dslr_logo.jpeg"/>
+          <div class="projectIntro">
+            <div class="title">Camera</div>
+            <div class="info">
+              <p>有一天，突然發現過去有一大段日子都沒有回憶，也沒有影像，所以想用相機紀錄生活</p>
+              <p>並於2012年時加入Nikon陣營 - D5100，後來陸續上了一些攝影課程，包含風景，人像與商攝，都有些許涉獵</p>
+              <p>拍照已成生活中重要的一環，也期許自己能拍下生活中每個精彩時刻</p>
+            </div>
+            <button type='button' class="btn btn-warning" id="cameraBtn">Details</button>
+          </div>
+        </div>
+
+        <div class="project col-md-10 col-md-offset-1">
+          <img src="image/zoids_logo.jpeg"/>
+          <div class="projectIntro">
+            <div class="title">Model</div>
+            <div class="info">
+              <p>還記得小時候，爺爺常常買模型送給我，和爺爺一起組模型時真的很開心，所以從當時起就很喜歡模型</p>
+              <p>尤其是機器獸 Zoids，是由Takara Tomy公司發售，最近壽屋也加入了發售行列，讓zoids進展到一個新高峰</p>
+              <p>組模型讓我常常廢寢忘食，卻也直接提升專注力，每每看到那些神人作品心裡都覺得崇敬與羨慕</p>
+            </div>
+            <!-- <button type='button' class="btn btn-warning" id="modelBtn">Details</button>  -->
+          </div>
+        </div>
+      </section>
+
+      <section id="section3" class="cd-section row">
+        <div class="contactMe col-md-10 col-md-offset-1">
+          <div class="projectIntro">
+            <div class="title">Contact Me</div>
+            <div class="info">
+              <div class="mail">
+                <div class="icon fa fa-envelope-o fa-2x"></div>
+                <div class="row">
+                  <a href="mailto:rain.lin@quantatw.com">rain.lin@asus.com</a>
+                  <div class="hint">Work</div>
+                </div>
+                <div class="row">
+                  <a href="mailto:s.rain@yahoo.com.tw">s.rain@yahoo.com.tw</a>
+                  <div class="hint">Personal</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="mastfoot"><p>Rain @2015</p></div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
